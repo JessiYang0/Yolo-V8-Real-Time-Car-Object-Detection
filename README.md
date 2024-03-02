@@ -11,14 +11,20 @@ Validation: 90 images
 Label: Contains YOLOv8 format labels 
 standard input size of 640x640 pixels
 
+<img src="pic/training_data.png">
+
 ## Setup
 * Load a pretrained YOLOv8n model from Ultralytics
 * The pre-trained model we've loaded is trained on the COCO dataset, which includes the 'car' and 'truck' classes among its 80 different categories — exactly what we need for our project
 
 ## Training result
 This trend, along with the close alignment of training and validation loss lines, suggests that the model is learning effectively without overfitting, meaning it is well-tuned to the dataset without being biased or too variable.
+<img src="pic/box_lss.png">
+<img src="pic/class_loss.png">
+<img src="pic/training_loss.png">
 
 ## Inference on Validation Set Images
+ <img src="pic/output.png">
 
 ## Inference on an Unseen Test Video
 Demonstrate the model's ability to adapt and perform accurately in real-world applications, further solidifying its effectiveness outside of the controlled dataset environment.
